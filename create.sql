@@ -7,7 +7,7 @@ create table publisher (
 create table books (
        id serial primary key,
        title text,
-       publisher serial reference studios(id),
+       publisher serial reference publisher(id),
        );
 
 create table subjects(
