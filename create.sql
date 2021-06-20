@@ -4,11 +4,7 @@ create table publisher (
        country text,
        );
 
-create table books (
-       id serial primary key,
-       title text,
-       publisher serial reference publisher(id),
-       );
+create table books ( id serial primary key, title text, publisher serial reference publisher(id),);
 
 create table subjects(
        id serial primary key,
