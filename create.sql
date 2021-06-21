@@ -15,7 +15,7 @@ create table subjects(
        name text
        );
 
-create table subjects (
+create table books_subjects (
        book serial reference books(id),
        subject serial reference subjects(id)
        );
